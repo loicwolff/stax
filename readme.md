@@ -186,7 +186,7 @@ This means that the whole UI is represented by a tree of `UIElement` objects rel
 For example:
 
 ```js
-const widget = new Widget({}, [
+const widget = Widget({}, [
     HorizontalStack({}, [
         //
         Text("Widget!", {}),
