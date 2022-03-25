@@ -134,7 +134,7 @@ class Text extends UIElement {
 }
 
 class Picture extends UIElement {
-    constructor(content, params = { align: null, mode: null }) {
+    constructor(content, params = { align: null, mode: null, size: null }) {
         super(content, params);
     }
 
@@ -163,6 +163,9 @@ class Picture extends UIElement {
             default:
                 break;
         }
+        
+        if (this.config.size)
+        	    this.element.imageSize = this.config.size
     }
 
     createElement() {
